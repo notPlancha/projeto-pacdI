@@ -1,0 +1,8 @@
+Package: app
+Imports:
+    here,
+    IRkernel,
+    languageserver,
+    ndjson,
+    tidymodels,
+    tidyverse
