@@ -1,6 +1,7 @@
 Package: app
 Imports:
     arrow,
+    DataExplorer,
     here,
     IRkernel,
     languageserver,
