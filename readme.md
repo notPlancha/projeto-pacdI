@@ -10,6 +10,7 @@ gh repo clone notPlancha\pbd
 R.exe -e 'install.packages("jetpack")'
 R.exe -e 'jetpack::install()'
 R.exe -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))
-pip install nbdev
+pip install nbdev jupytext
 nbdev_install_hooks
 ```
+Depois de ter o dataset em `data/`, este pode ser passado para .parquet com `script/toParquet.R` (sem mudanças na base de dados)

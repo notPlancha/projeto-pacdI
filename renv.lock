@@ -209,6 +209,28 @@
       ],
       "Hash": "0cf10dab0d023d5b46a5a14387556891"
     },
+    "arrow": {
+      "Package": "arrow",
+      "Version": "11.0.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "assertthat",
+        "bit64",
+        "cpp11",
+        "glue",
+        "methods",
+        "purrr",
+        "rlang",
+        "stats",
+        "tidyselect",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "e861b81e0b87a2f133a688c985953508"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.1",
@@ -218,6 +240,16 @@
         "sys"
       ],
       "Hash": "e8a22846fff485f0be3770c2da758713"
+    },
+    "assertthat": {
+      "Package": "assertthat",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "tools"
+      ],
+      "Hash": "50c838a310445e954bc13f26f26a6ecf"
     },
     "backports": {
       "Package": "backports",
@@ -2173,6 +2205,22 @@
         "vctrs"
       ],
       "Hash": "a84e2cc86d07289b3b6f5069df7a004c"
+    },
+    "tidygeocoder": {
+      "Package": "tidygeocoder",
+      "Version": "1.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "dplyr",
+        "httr",
+        "jsonlite",
+        "lifecycle",
+        "progress",
+        "tibble"
+      ],
+      "Hash": "44fd552dae5b20c4224e895449e3827a"
     },
     "tidymodels": {
       "Package": "tidymodels",
