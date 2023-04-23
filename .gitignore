@@ -2,6 +2,7 @@ temp.*
 temp/
 .idea
 data/*
+*.drawio.bkp
 # History files
 .Rhistory
 .Rapp.history
