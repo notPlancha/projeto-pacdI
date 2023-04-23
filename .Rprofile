@@ -1,5 +1,11 @@
-if (requireNamespace("jetpack", quietly=TRUE)) {
-  jetpack::load()
-} else {
-  message("Install Jetpack to use a virtual environment for this project")
+.First <- function(){
+	base::.First.sys()
+	here::i_am("readme.md")
+	library(here)
+	library(tidyverse)
+	library(conflicted)
+	conflicts_prefer(
+		dplyr::filter(),
+		dplyr::lag()
+	)
 }
