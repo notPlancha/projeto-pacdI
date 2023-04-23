@@ -5,11 +5,13 @@
 É preciso por o dataset do moodle em `data/`
 
 ```powershell
+Remove-Alias R -Force
 scoop install git gh tectonic watchexec
 gh repo clone notPlancha/projeto-pacdI
 cd .\projeto-pacdI
-R.exe -e 'devtools::install_deps()'
-R.exe -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))
+R -e 'install.packages("devtools")'
+R -e 'devtools::install_deps()'
+R -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))'
 pip install nbdev jupytext
 nbdev_install_hooks
 ```
