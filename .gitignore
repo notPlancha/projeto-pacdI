@@ -3,6 +3,7 @@ temp/
 .idea
 data/*
 *.drawio.bkp
+renv.lock
 # History files
 .Rhistory
 .Rapp.history
