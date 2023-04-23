@@ -6,7 +6,7 @@
 
 ```powershell
 scoop install git gh tectonic watchexec
-gh repo clone notPlancha\projeto-pacdI
+gh repo clone notPlancha/projeto-pacdI
 cd .\projeto-pacdI
 R.exe -e 'devtools::install_deps()'
 R.exe -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))
