@@ -1,11 +1,11 @@
 Package: app
 Imports:
+    here,
     arrow,
     DataExplorer,
     here,
     IRkernel,
     languageserver,
     ndjson,
-    tidygeocoder,
     tidymodels,
     tidyverse
