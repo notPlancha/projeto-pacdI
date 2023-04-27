@@ -9,9 +9,9 @@ Remove-Alias R -Force
 scoop install git gh tectonic watchexec
 gh repo clone notPlancha/projeto-pacdI
 cd .\projeto-pacdI
-R -e 'install.packages("devtools")'
-R -e 'devtools::install_deps()'
-R -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))'
+R -e "install.packages('devtools')" # ordem de aspas importante
+R -e "devtools::install_deps()"
+R -e "IRkernel::installspec(displayname='IR PACD', name='ir_pacd', rprofile=here::here('.Rprofile'))"
 pip install nbdev jupytext
 nbdev_install_hooks
 ```
