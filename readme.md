@@ -12,7 +12,7 @@ cd .\projeto-pacdI
 R -e 'install.packages("devtools")'
 R -e 'devtools::install_deps()'
 R -e 'IRkernel::installspec(displayname="IR PACD", name="ir_pacd", rprofile=here::here(".Rprofile"))'
-pip install nbdev jupytext
+pip install nbdev jupytext nbmerge
 nbdev_install_hooks
 ```
 Depois de ter o dataset em `data/`, este pode ser passado para .parquet com `script/toParquet.R` (sem mudanças na base de dados)
