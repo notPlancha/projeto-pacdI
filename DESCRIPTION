@@ -10,4 +10,6 @@ Imports:
     tidymodels,
     tidyverse,
 	skimr,
-    ggcorrplot
+    ggcorrplot,
+    tidylog,
+    SmartEDA
