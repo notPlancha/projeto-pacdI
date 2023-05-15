@@ -9,15 +9,15 @@
 		library(tidymodels)
 		library(tidylog)
 		# do conflicted::conflict_scout() if needed
-		conflict_prefer_all("tidylog", c("dtplyr", "dplyr"))
+		conflict_prefer_all("tidylog", c("dtplyr", "dplyr"), quiet = T)
 		conflicts_prefer(
 			tidylog::filter(),
-			tidylog::lag(),
+			dplyr::lag(),
 			stringr::fixed(),
 			recipes::step(),
 			scales::col_factor(),
 			dplyr::left_join(),# still broken in 1.0.1.9000 (tidylog/issues/58)
-			dplyr::join_by(),
+			dplyr::join_by()
 			# let discard be,
 			# let spec be
 		)
