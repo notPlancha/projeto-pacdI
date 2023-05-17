@@ -12,4 +12,7 @@ Imports:
 	skimr,
     ggcorrplot,
     tidylog,
-    SmartEDA
+    SmartEDA,
+    corrr,
+    tictoc,
+    formulaic
