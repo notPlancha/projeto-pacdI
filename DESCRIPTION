@@ -15,4 +15,5 @@ Imports:
     SmartEDA,
     corrr,
     tictoc,
-    formulaic
+    formulaic,
+    pROC
