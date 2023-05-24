@@ -16,4 +16,8 @@ Imports:
     corrr,
     tictoc,
     formulaic,
-    pROC
+    pROC,
+	LiblineaR,
+	klaR,
+	discrim,
+	ranger

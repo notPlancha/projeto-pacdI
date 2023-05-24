@@ -8,6 +8,7 @@
 		library(conflicted)
 		library(tidymodels)
 		library(tidylog)
+		library(magrittr)
 		# do conflicted::conflict_scout() if needed
 		conflict_prefer_all("tidylog", c("dtplyr", "dplyr"), quiet = T)
 		conflicts_prefer(
@@ -17,11 +18,12 @@
 			recipes::step(),
 			scales::col_factor(),
 			dplyr::left_join(),# still broken in 1.0.1.9000 (tidylog/issues/58)
-			dplyr::join_by()
+			dplyr::join_by(),
+			tidylog::select() # MASS
 			# let discard be,
 			# let spec be
 		)
 	}, error= function(e){
-		print("some libraries are not installed, not loading .Rprofile. Do devtools::install_deps()")
+		print("some libraries are not installed, not loading .Rprofile. Do remotes::install_deps()")
 	})
 }
