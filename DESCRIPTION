@@ -17,7 +17,8 @@ Imports:
     tictoc,
     formulaic,
     pROC,
-	LiblineaR,
 	klaR,
 	discrim,
-	ranger
+	ranger,
+    xgboost,
+    naivebayes
