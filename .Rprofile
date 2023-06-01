@@ -19,7 +19,8 @@
 			scales::col_factor(),
 			dplyr::left_join(),# still broken in 1.0.1.9000 (tidylog/issues/58)
 			dplyr::join_by(),
-			tidylog::select() # MASS
+			tidylog::select(), # MASS
+			tidylog::mutate(), # rstatix
 			# let discard be,
 			# let spec be
 		)
